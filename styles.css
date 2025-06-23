@@ -1,0 +1,100 @@
+/* Variables */
+:root {
+    --primary: #00dbde;
+    --secondary: #fc00ff;
+    --accent: #f4a261;
+    --background: #264653;
+    --text: #e9ecef;
+    --light: #f8f9fa;
+    --shadow: rgba(0, 0, 0, 0.15);
+    
+    --dark-primary: #1d6a60;
+    --dark-background: #1a1a1a;
+    --dark-text: #f8f9fa;
+  }
+  
+  /* Base Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, var(--background) 0%, #1a535c 100%);
+    color: var(--text);
+    min-height: 100vh;
+    transition: all 0.5s ease;
+    line-height: 1.6;
+  }
+  
+  .app-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px var(--shadow);
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+    padding: 1.5rem 2rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px var(--shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar:hover {
+    transform: translateY(-5px);
+  }
+  
+  .navbar h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(to right, var(--light) 0%, #fff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .theme-toggle {
+    background: transparent;
+    border: 2px solid var(--light);
+    color: var(--light);
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .theme-toggle:hover {
+    background: var(--light);
+    color: var(--primary);
+    transform: translateY(-2px);
+  }
+  
+  /* Setup Section */
+  .setup-section {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .input-group {
+    margin-bottom: 1.5rem;
+  }
+  
